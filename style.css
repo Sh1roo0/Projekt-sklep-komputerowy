@@ -106,15 +106,28 @@ header{
 }
 .okazja{
     width: 25%;
-    height: 500px;
+    height: 700px;
     background-color: white;
     border-radius: 20px;
     padding: 30px;
-    
+    font-size: 20px;
+}
+.okazja p{
+    padding-top: 15px;
 }
 .okazja h1{
     font-size: 1.6rem;
     width: 100px;
+}
+.okazja span{
+    font-size: 14px;
+}
+.sp1{
+    text-decoration: line-through;
+}
+.okazja h2{
+    text-align: center;
+    padding-top: 40px;
 }
 .okazja-btn{
     display: flex;
@@ -127,8 +140,22 @@ header{
     font-size: 1.4rem;
     border-radius: 10px;
     border: none;
-    background-color: rgba(224, 224, 224, 0.39);
-    
+    background-color: rgba(224, 224, 224);
+    position: relative;
+}
+.okazja-img{
+   width: 100%;
+   height: 250px;
+   border-radius: 10px;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -10px;
+}   
+.okazja-img img{
+    width:50%;
+    height: 200px;
 }
 .slider{
     position: relative;
