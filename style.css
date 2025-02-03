@@ -222,14 +222,19 @@ aside{
 }
 .Giga-wyprzedaz{
     width: 80%;
-    height: 400px;
+    height: 450px;
     background-color: white;
-    display: flex;
     border-radius: 10px;
-    
 }
 .giga-info{
     padding: 20px;
+}
+.Giga-wyprzedaz img{
+    width: 19%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+   margin: 10px;
 }
 .giga-info h1{
     font-size: 30px;
@@ -237,6 +242,51 @@ aside{
 .giga-info p{
     font-size: 15px;
     font-weight: 300;
+}
+.wyprzedaz-article{
+    width: 19%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 2px lightgray;
+    margin: 10px;
+}
+.center-wyprzedaz{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wyprzedaz-img-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.wyprzedaz-img-wrapper img{
+width:60%;
+object-fit: cover;
+height: 200px;
+padding-top: 30px;
+}
+.wyprzedaz-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    text-align: center;
+}
+.wyprzedaz-text p{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.wyprzedaz-text span{
+    width: 120px;
+    height: 30px;
+    background-color: rgb(226, 253, 226);
+    color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .img-wrapper{
     display: flex;
