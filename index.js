@@ -38,3 +38,40 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+
+
+
+function Walidacja(){
+    let newsletter = document.getElementById("newsletter").value;
+
+
+    if(newsletter == ""){
+    alert("Niepodano adresu e-mail");
+    return;
+}else{
+    alert("Dziękujemy za zapisanie się do naszego newslettera!");
+}
+
+
+
+document.getElementById("newsletter").value = "";
+}
+
+
+
+var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "img/techpoint.png";
+
+    }else{
+        icon.src = "img/techpoint.png";
+    }
+  }
+  function Modes() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
