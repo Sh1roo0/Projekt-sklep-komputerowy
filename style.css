@@ -87,7 +87,7 @@ header{
 }
 .mdl{
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     background-color: rgba(224, 224, 224, 0.39);
 }
 .mid{
@@ -101,7 +101,7 @@ header{
 }
 .products{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     display: flex;
 }
 .occasion{
@@ -132,7 +132,7 @@ header{
 .okazja h2{
     text-align: center;
     padding-top: 40px;
-}
+}   
 .okazja-btn{
     display: flex;
     justify-content: end;
@@ -147,6 +147,11 @@ header{
     background-color: rgba(224, 224, 224);
     position: relative;
 }
+.okazja button:hover{
+    cursor: pointer;
+    background-color: rgb(192, 192, 192);
+    transition: ease-in 0.2s;
+}
 .buy{
     padding: 40px 00 0;
 }
@@ -158,7 +163,7 @@ height: 50px;
    width: 100%;
    height: 250px;
    border-radius: 10px;
-   background-color: black;
+   background-color: white;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -210,6 +215,8 @@ article h6{
 }
 article:hover{
     border: solid 2px lightgray ;
+    cursor: pointer;
+    
 }
 i{
     display: flex;
@@ -218,7 +225,6 @@ i{
 aside{
     display: flex;
     justify-content: center;
-    
 }
 .Giga-wyprzedaz{
     width: 80%;
@@ -250,6 +256,10 @@ aside{
     background-color: #ffffff;
     border: solid 2px lightgray;
     margin: 10px;
+}
+.wyprzedaz-article:hover{
+    box-shadow: 0px 2px 5px 2px lightgray;
+    cursor: pointer;
 }
 .center-wyprzedaz{
     display: flex;
@@ -295,6 +305,120 @@ padding-top: 30px;
 }
 .article-text{
     padding-top: 15px;
+}
+.img-slider-box{
+    margin: 150px 0  0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.img-slider-box img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(5, 5, 5, 0.6);
+    transition: all ease-in-out 0.5s;
+}
+.img-slider-box img:hover{
+width: 25%;
+}
+.center-img-slider{
+   padding-left: 120px;
+}
+.newsletter{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px;
+    display: flex;
+}
+.newsletter-center{
+    display: flex;
+    justify-content: center;
+}
+.newsletter-left{
+    width: 50%;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.newsletter-left input{
+    width: 50%;
+    height: 45px;
+    border-radius: 10px;
+    border: solid 1px lightgray;
+    padding-left: 10px;
+    
+}
+.newsletter-left button{
+    width: 18%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.newsletter-input{
+    margin: 15px 0 15px;
+}
+.newsletter-left button:hover{
+    background-color: rgb(51, 51, 51);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.newsletter-right{
+width: 50%;
+height: 100%;
+background-image: url(newsletter/newsletter.png);
+background-size: cover;
+float: right;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+}
+.text-column{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 ;
+}
+.text-column svg{
+    width: 30px;
+}
+.icon-footer{
+    display: flex;
+    margin: 15px 0 0;
+}
+.icon-footer span{
+    margin: 10px;
+}
+.icon-footer:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-row-icons {
+display: flex;
+justify-content: space-between;
+margin: 30px 0 0;
+}
+.text-column-center{
+    display: flex;
+    justify-content: space-around;
+}
+.text-column p{
+    margin: 15px 0 0;
+    color: rgb(102, 102, 102);
+}
+.text-column p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .slider{
     position: relative;
