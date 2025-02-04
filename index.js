@@ -2,39 +2,39 @@ const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalID = null;
 
-
+//initializeSlider();
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
-function initializeSlider() {
+function initializeSlider(){
 
-    if (slides.length > 0) {
+    if(slides.length > 0){
 
         slides[slideIndex].classList.add("displaySlide");
         intervalID = setInterval(nextSlide, 5000);
     }
-
-
+   
+    
 }
-function showSlide(index) {
+function showSlide(index){
 
-    if (index >= slides.length) {
-        slideIndex = 0;
-    }
-    else if (index < 0) {
-        slideIndex = slides.length - 1;
-    }
+if(index >= slides.length){
+    slideIndex = 0;
+}
+else if(index < 0){
+    slideIndex = slides.length - 1;
+}
 
-    slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
-    });
-    slides[slideIndex].classList.add("displaySlide");
+slides.forEach(slide =>{
+    slide.classList.remove("displaySlide");
+});
+slides[slideIndex].classList.add("displaySlide");
 }
-function prevSlide() {
-    clearInterval(intervalID);
-    slideIndex--;
-    showSlide(slideIndex);
+function prevSlide(){
+clearInterval(intervalID);
+slideIndex--;
+showSlide(slideIndex);
 }
-function nextSlide() {
+function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
@@ -42,24 +42,44 @@ function nextSlide() {
 
 
 
-function Walidacja() {
+function Walidacja(){
     let newsletter = document.getElementById("newsletter").value;
 
 
-    if (newsletter == "") {
-        alert("Niepodano adresu e-mail");
-        return;
-    } else {
-        alert("Dziękujemy za zapisanie się do naszego newslettera!");
-    }
-
-    document.getElementById("newsletter").value = "";
+    if(newsletter == ""){
+    alert("Niepodano adresu e-mail");
+    return;
+}else{
+    alert("Dziękujemy za zapisanie się do naszego newslettera!");
 }
 
-const loader = document.getElementById("loader");
-const container = document.getElementById("container");
 
-window.addEventListener("DOMContentLoaded", () => {
-    loader.style.display = "none";
-    container.style.display = "block";
-})
+
+document.getElementById("newsletter").value = "";
+}
+
+
+
+var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "img/logo.avif";
+
+    }else{
+        icon.src = "img/logo.avif";
+    }
+  }
+  function Modes() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+
+ const zmienna1 = document.getElementById("container");
+ const zmienna2 = document.getElementById("loader");
+
+ window.addEventListener("load", () => {
+    zmienna1.style.display = "block";
+    zmienna2.style.display = "none";
+ })
