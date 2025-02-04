@@ -531,7 +531,7 @@ aside {
 
 .newsletter-right {
     flex: 1 0 50%;
-    background-image: url(newsletter/newsletter.png);
+    background-image: url(newsletter/newsletter.avif);
     background-size: cover;
     float: right;
 }
