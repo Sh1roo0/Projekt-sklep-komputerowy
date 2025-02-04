@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalID = null;
 
-//initializeSlider();
+
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
 function initializeSlider() {
@@ -59,7 +59,7 @@ function Walidacja() {
 const loader = document.getElementById("loader");
 const container = document.getElementById("container");
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     loader.style.display = "none";
     container.style.display = "block";
 })
