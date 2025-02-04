@@ -283,6 +283,13 @@ header {
     flex: 1 0 20%;
 }
 
+.okazja-container {
+    order: 1;
+}
+.product-section {
+    order: 2;
+}
+
 article span,
 p {
     font-size: 15px;
@@ -659,6 +666,14 @@ img.displaySlide {
     .center-wyprzedaz .dupaimg {
         display: none;
     }
+
+    .okazja-container {
+        order: 2;
+    }
+    .product-section {
+        order: 1;
+    }
+    
 }
 
 @media (max-width: 900px) {
